@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:text="1. Which company owns Android?"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="2. What does APK stand for?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/apk_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Package" />
+
+            <RadioButton
+                android:id="@+id/apk_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Program Kit" />
+
+            <RadioButton
+                android:id="@+id/apk_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Proprietary Kit" />
+
+            <RadioButton
+                android:id="@+id/apk_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Package" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="3. Which of the below views are available in Android?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text View" />
+
+            <RadioButton
+                android:id="@+id/view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image View" />
+
+            <RadioButton
+                android:id="@+id/view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <RadioButton
+                android:id="@+id/view_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Of the Above" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="4. Which of the below are View Groups?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/view_group_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Linear Layout" />
+
+        <CheckBox
+            android:id="@+id/view_group_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panoramic View" />
+
+        <CheckBox
+            android:id="@+id/view_group_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relative Layout" />
+
+        <CheckBox
+            android:id="@+id/view_group_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunrise View" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="5. What does XML stand for?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/xml_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eXtra Modern Link" />
+
+            <RadioButton
+                android:id="@+id/xml_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eXtensible Markup Language" />
+
+            <RadioButton
+                android:id="@+id/xml_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="eXample Markup Language" />
+
+            <RadioButton
+                android:id="@+id/xml_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X-Markup Language" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Score"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="0 of 5"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submitAnswers"
+            android:text="Submit"
+            android:textAllCaps="true" />
+    </LinearLayout>
+</ScrollView>

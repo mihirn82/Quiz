@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionDone"
-            android:text="1. Which company owns Android?"
+            android:text="@string/question_one_text"
             android:textSize="16sp" />
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="2. What does APK stand for?"
+            android:text="@string/question_two_text"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="3. Which of the below views are available in Android?"
+            android:text="@string/question_three_text"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -103,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="4. Which of the below are View Groups?"
+            android:text="@string/question_four_text"
             android:textSize="16sp" />
 
         <CheckBox
@@ -134,7 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="5. What does XML stand for?"
+            android:text="@string/question_five_text"
             android:textSize="16sp" />
 
         <RadioGroup

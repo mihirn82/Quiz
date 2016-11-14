@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         int grade = 0;
 
         EditText text = (EditText) findViewById(R.id.name_field);
-        String name = text.getText().toString();
+        String name = text.getText().toString().trim();
 
         RadioButton apk1 = (RadioButton) findViewById(R.id.apk_1);
         RadioButton apk2 = (RadioButton) findViewById(R.id.apk_2);
@@ -89,20 +89,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (grade == 0) {
-            if (name.equals("Google")) {
-                grade = grade + 1;
+            if (name.equalsIgnoreCase("Google")) {
+                grade++;
             }
             if (apk1.isChecked()) {
-                grade = grade + 1;
+                grade++;
             }
             if (view4.isChecked()) {
-                grade = grade + 1;
+                grade++;
             }
-            if (viewGroup1.isChecked() && viewGroup3.isChecked()) {
-                grade = grade + 1;
+            if (viewGroup1.isChecked() && !viewGroup2.isChecked() && viewGroup3.isChecked() && !viewGroup4.isChecked()) {
+                grade++;
             }
             if (xml2.isChecked()) {
-                grade = grade + 1;
+                grade++;
             }
         }
         return grade;
